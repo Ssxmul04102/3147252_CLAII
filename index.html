@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glosario TI - A a M</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">A - M</a></li>
+          <li><a href="Pagina1.html">N - Z</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header>
+        <h1>Glosario TI (A - M)</h1>
+        <div class="letter-dropdown">
+          <label for="letras">Ir a la letra:</label>
+          <select id="letras" onchange="irASeccion(this)">
+            <option value="">Selecciona una letra</option>
+            <option value="#A">A</option>
+            <option value="#B">B</option>
+            <option value="#C">C</option>
+            <option value="#D">D</option>
+            <option value="#E">E</option>
+            <option value="#F">F</option>
+            <option value="#G">G</option>
+            <option value="#H">H</option>
+            <option value="#I">I</option>
+            <option value="#J">J</option>
+            <option value="#K">K</option>
+            <option value="#L">L</option>
+            <option value="#M">M</option>
+          </select>
+        </div>
+      </header>
+
+      <main>
+        <section id="A">
+          <h2>A</h2>
+          <p><strong>API:</strong> Interfaz de programación de aplicaciones que permite la comunicación entre diferentes sistemas.</p>
+        </section>
+        <section id="B">
+          <h2>B</h2>
+          <p><strong>Backend:</strong> Parte del desarrollo web que se encarga de la lógica del servidor y la base de datos.</p>
+        </section>
+        <section id="C">
+          <h2>C</h2>
+          <p><strong>Cloud Computing:</strong> Uso de servicios de computación a través de internet.</p>
+        </section>
+        <section id="D">
+          <h2>D</h2>
+          <p><strong>DevOps:</strong> Conjunto de prácticas que combinan desarrollo y operaciones para mejorar la entrega de software.</p>
+        </section>
+        <section id="E">
+          <h2>E</h2>
+          <p><strong>Endpoint:</strong> Punto final de comunicación en una API.</p>
+        </section>
+        <section id="F">
+          <h2>F</h2>
+          <p><strong>Frontend:</strong> Parte del desarrollo web que se encarga de la interfaz de usuario.</p>
+        </section>
+        <section id="G">
+          <h2>G</h2>
+          <p><strong>Git:</strong> Sistema de control de versiones distribuido.</p>
+        </section>
+        <section id="H">
+          <h2>H</h2>
+          <p><strong>HTTP:</strong> Protocolo de transferencia de hipertexto utilizado en la web.</p>
+        </section>
+        <section id="I">
+          <h2>I</h2>
+          <p><strong>IP:</strong> Dirección única que identifica un dispositivo en una red.</p>
+        </section>
+        <section id="J">
+          <h2>J</h2>
+          <p><strong>JavaScript:</strong> Lenguaje de programación utilizado principalmente en el desarrollo web.</p>
+        </section>
+        <section id="K">
+          <h2>K</h2>
+          <p><strong>Kubernetes:</strong> Plataforma de orquestación de contenedores.</p>
+        </section>
+        <section id="L">
+          <h2>L</h2>
+          <p><strong>Linux:</strong> Sistema operativo de código abierto.</p>
+        </section>
+        <section id="M">
+          <h2>M</h2>
+          <p><strong>Machine Learning:</strong> Rama de la inteligencia artificial que permite a las máquinas aprender de los datos.</p>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; Emmanuel - Samuel Página 1</p>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function irASeccion(select) {
+      const valor = select.value;
+      if (valor) {
+        window.location.hash = valor;
+      }
+    }
+  </script>
+</body>
+</html>

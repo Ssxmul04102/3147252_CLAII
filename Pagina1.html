@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glosario TI - N a Z</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">A - M</a></li>
+          <li><a href="Pagina1.html" class="active">N - Z</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header>
+        <h1>Glosario TI (N - Z)</h1>
+        <div class="letter-dropdown">
+          <label for="letras">Ir a la letra:</label>
+          <select id="letras" onchange="irASeccion(this)">
+            <option value="">Selecciona una letra</option>
+            <option value="#N">N</option>
+            <option value="#O">O</option>
+            <option value="#P">P</option>
+            <option value="#Q">Q</option>
+            <option value="#R">R</option>
+            <option value="#S">S</option>
+            <option value="#T">T</option>
+            <option value="#U">U</option>
+            <option value="#V">V</option>
+            <option value="#W">W</option>
+            <option value="#X">X</option>
+            <option value="#Y">Y</option>
+            <option value="#Z">Z</option>
+          </select>
+        </div>
+      </header>
+
+      <main>
+        <section id="N">
+          <h2>N</h2>
+          <p><strong>Node.js:</strong> Entorno de ejecución para JavaScript en el lado del servidor.</p>
+        </section>
+        <section id="O">
+          <h2>O</h2>
+          <p><strong>Open Source:</strong> Software cuyo código fuente está disponible para ser modificado y distribuido libremente.</p>
+        </section>
+        <section id="P">
+          <h2>P</h2>
+          <p><strong>Python:</strong> Lenguaje de programación popular por su simplicidad y versatilidad.</p>
+        </section>
+        <section id="Q">
+          <h2>Q</h2>
+          <p><strong>Query:</strong> Consulta realizada a una base de datos.</p>
+        </section>
+        <section id="R">
+          <h2>R</h2>
+          <p><strong>REST:</strong> Estilo arquitectónico para diseñar servicios web.</p>
+        </section>
+        <section id="S">
+          <h2>S</h2>
+          <p><strong>SQL:</strong> Lenguaje utilizado para gestionar bases de datos relacionales.</p>
+        </section>
+        <section id="T">
+          <h2>T</h2>
+          <p><strong>TCP/IP:</strong> Conjunto de protocolos que permiten la comunicación en redes.</p>
+        </section>
+        <section id="U">
+          <h2>U</h2>
+          <p><strong>UI:</strong> Interfaz de usuario, parte visual de una aplicación.</p>
+        </section>
+        <section id="V">
+          <h2>V</h2>
+          <p><strong>VPN:</strong> Red privada virtual que permite conexiones seguras.</p>
+        </section>
+        <section id="W">
+          <h2>W</h2>
+          <p><strong>WebSocket:</strong> Protocolo para comunicación bidireccional en tiempo real.</p>
+        </section>
+        <section id="X">
+          <h2>X</h2>
+          <p><strong>XML:</strong> Lenguaje de marcado utilizado para almacenar y transportar datos.</p>
+        </section>
+        <section id="Y">
+          <h2>Y</h2>
+          <p><strong>YAML:</strong> Formato de serialización de datos legible por humanos.</p>
+        </section>
+        <section id="Z">
+          <h2>Z</h2>
+          <p><strong>Zero-Day:</strong> Vulnerabilidad desconocida en software que puede ser explotada.</p>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; Emmanuel - Samuel Página 2</p>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function irASeccion(select) {
+      const valor = select.value;
+      if (valor) {
+        window.location.hash = valor;
+      }
+    }
+  </script>
+</body>
+</html>
